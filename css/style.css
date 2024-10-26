@@ -1,0 +1,225 @@
+@font-face {
+    font-family: RedHat;
+    src: url('../vendor/Fonts/Red-Hat-Display/RedHatDisplay-VariableFont_wght.ttf');
+}
+
+*{
+    font-family: RedHat;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --brand-color: #0B390B;
+    --banner-bg-color: #F4FAF0;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-text: #262626;
+    --color-text-02: #717D7D;
+    --color-gray: #606060;
+
+}
+
+.site-header .navbar{
+    background-color: var(--brand-color);
+}
+
+.site-header a{
+    color: var(--color-white);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 39.626px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.site-header a i{
+    padding-right: 8px;
+}
+
+.navbar-toggler{
+    padding: 0;
+    border: none;
+}
+
+.navbar-toggler i{
+    color: white;
+    font-size: 2rem;
+}
+
+.logo-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.left-banner img{
+    width: 75px;
+    height: 75px;
+    margin: auto 5px;
+}
+
+.text-01.aaccup-text{
+    color: var(--color-text);
+    text-align: center;
+}
+
+.text-01{
+    color: var(--brand-color);
+    text-align: center;
+    font-size: clamp(2rem, 5vw + 1rem, 4.375rem);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 0;
+}
+
+.text-wmsu {
+    font-size: clamp(1rem, 1.5vw + 0.5rem, 1.25rem);
+    line-height: 1.5;
+    text-align: center;
+}
+
+.text-02 {
+    font-size: clamp(1rem, 2vw + 0.5rem, 1.5rem);
+    color: var(--color-text-02);
+    margin: 4px 0;
+    text-align: center;
+}
+
+.view-website-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-website, .view-website:active, .view-website:visited {
+    padding: 10px 15px;
+    color: var(--color-white);
+    font-size: clamp(0.875rem, 1vw + 0.5rem, 1rem);
+    font-weight: 700;
+    background-color: var(--brand-color);
+    text-decoration: none;
+    border-radius: 23px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.view-website:hover{
+    opacity: 0.8;
+}
+
+.left-banner {
+    background-color: var(--banner-bg-color);
+    padding-bottom: 2rem;
+}
+
+.right-banner{
+    background-image: url('../images/building.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+    .left-banner img{
+        width: 100px;
+        height: 100px;
+        margin: auto 10px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .left-banner img{
+        width: 80px;
+        height: 80px;
+        margin: auto 0;
+    }
+
+    .logo-container{
+        justify-content: flex-start;
+        width: auto;
+    }
+
+    .text-01{
+        text-align: left;
+        font-size: 3.125rem;
+    }
+
+    .text-01.aaccup-text{
+        text-align: left;
+        font-size: 3.125rem;
+    }
+    
+    .text-wmsu {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+    
+    .text-02 {
+        font-size: 1.5rem;
+        margin: 4px 0;
+        text-align: left;
+    }
+    
+    .view-website, .view-website:active, .view-website:visited {
+        font-size: 1rem;
+    }
+
+    .logo-text-container {
+        flex-direction: row;
+    }
+
+    .view-website-container{
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .text-wmsu {
+        font-size: 1rem;
+    }
+
+    .left-banner img{
+        width: 90px;
+        height: 90px;
+        margin: auto 0;
+    }
+
+    .text-01{
+        font-size: 4rem;
+        line-height: 0.9;
+    }
+
+    .text-01.aaccup-text{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .left-banner img{
+        width: 100px;
+        height: 100px;
+        margin: auto 0;
+        margin-right: 10px;
+    }
+
+    .text-01{
+        font-size: 4.375rem;
+    }
+
+    .text-01.aaccup-text{
+        font-size: 4.375rem;
+    }
+}
