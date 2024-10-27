@@ -19,7 +19,7 @@
     --color-text: #262626;
     --color-text-02: #717D7D;
     --color-gray: #606060;
-
+    --color-navlink-hover: rgb(168, 168, 168);
 }
 
 .site-header .navbar{
@@ -48,6 +48,14 @@
 .navbar-toggler i{
     color: white;
     font-size: 2rem;
+}
+
+.site-header .nav-link:active, .site-header .nav-link:visited{
+    color: var(--color-white);
+}
+
+.site-header .nav-link:hover{
+    color: var(--color-navlink-hover);
 }
 
 .logo-text-container{
@@ -121,15 +129,79 @@
 
 .left-banner {
     background-color: var(--banner-bg-color);
-    padding-bottom: 2rem;
+    padding-bottom: 3rem !important;
 }
 
 .right-banner{
     background-image: url('../images/building.png');
-    background-position: center;
+    background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.text-video{
+    color: var(--color-white);
+    font-style: normal;
+    font-weight: 800;
+}
+
+#videos{
+    background-color: var(--color-gray);
+    border-radius: 40px;
+    position: relative;
+    top: -40px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.play-button i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
+    font-size: 60px;
+}
+
+.video-label{
+    font-size: 1rem;
+}
+
+.gallery-img-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-img-container:hover .gallery-img {
+    transform: scale(1.1) rotate(5deg);
+    cursor: pointer;
+}
+
+.gallery-img-container:hover .play-button i{
+    color: var(--color-navlink-hover);
+}
+
+.play-button {
+    color: white;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 @media screen and (min-width: 768px) {
     .left-banner img{
@@ -184,6 +256,18 @@
         flex-direction: row;
         justify-content: flex-start;
     }
+
+    .left-banner{
+        padding-bottom: 50px !important;
+    }
+
+    .text-video{
+        font-size: 2.813rem;
+    }
+
+    .video-label{
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -205,6 +289,10 @@
     .text-01.aaccup-text{
         font-size: 4rem;
     }
+
+    .text-video{
+        font-size:3.2rem;
+    }
 }
 
 @media screen and (min-width: 1400px) {
@@ -221,5 +309,13 @@
 
     .text-01.aaccup-text{
         font-size: 4.375rem;
+    }
+
+    .text-video{
+        font-size: 3.2rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 72px;
+        letter-spacing: -1px;
     }
 }
