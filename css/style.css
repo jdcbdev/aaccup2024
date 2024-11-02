@@ -155,7 +155,6 @@
 .gallery-img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
 }
 
 .play-button i{
@@ -170,6 +169,8 @@
 
 .video-label{
     font-size: 1rem;
+    color: var(--color-text);
+    font-weight: 700;
 }
 
 .gallery-img-container {
@@ -177,6 +178,7 @@
     display: inline-block;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
+    border-radius: 25px;
 }
 
 .gallery-img {
@@ -202,12 +204,44 @@
     transform: translate(-50%, -50%);
 }
 
+.btn-view{
+    max-width: 150px;
+    background-color: var(--brand-color);
+    color: var(--color-white);
+    border: none;
+    border-radius: 15px;
+}
+
+.text-bscs-presentation{
+    font-size: 7vw;
+    text-align: center;
+    color: var(--color-text);
+    font-weight: 800;
+}
+
+.border-card-view{
+    border: 1px solid var(--brand-color);
+}
+
+#video-presentation .video-label{
+    text-transform: uppercase;
+}
+
 
 @media screen and (min-width: 768px) {
     .left-banner img{
         width: 100px;
         height: 100px;
         margin: auto 10px;
+    }
+
+    .text-bscs-presentation{
+        font-size: 5vw;
+        line-height: 65px;
+    }
+
+    #video-presentation .play-button i{
+        font-size: 75px;
     }
 }
 
@@ -267,6 +301,14 @@
 
     .video-label{
         font-size: 1.2rem;
+    }
+
+    .text-bscs-presentation{
+        font-size: 4vw;
+    }
+
+    #video-presentation .video-label{
+        font-size: 1.8rem;
     }
 }
 
