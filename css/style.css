@@ -152,6 +152,10 @@
     top: -40px;
 }
 
+#featured-students{
+    background-color: var(--brand-color);
+}
+
 .gallery-img {
     width: 100%;
     height: auto;
@@ -202,6 +206,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
 }
 
 .btn-view{
@@ -269,6 +274,16 @@
 
 #narrative-report hr{
     color: var(--brand-color);
+}
+
+.owl-theme .owl-dots .owl-dot span{
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-white);
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots{
+    margin-top: 20px;
 }
 
 @media screen and (min-width: 768px) {
