@@ -35,16 +35,16 @@
                             <a class="nav-link" href="#videos"><i class="bi bi-camera-reels d-lg-none d-xl-inline"></i>VIDEOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="bi bi-easel d-lg-none d-xl-inline"></i>PRESENTATIONS</a>
+                            <a class="nav-link" href="#video-presentations"><i class="bi bi-easel d-lg-none d-xl-inline"></i>PRESENTATIONS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="bi bi-list-check d-lg-none d-xl-inline"></i>WORKING CHECKLIST</a>
+                            <a class="nav-link" href="#working-checklist"><i class="bi bi-list-check d-lg-none d-xl-inline"></i>WORKING CHECKLIST</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="bi bi-file-earmark-text d-lg-none d-xl-inline"></i>NARRATIVE PROFILE</a>
+                            <a class="nav-link" href="#narrative-report"><i class="bi bi-file-earmark-text d-lg-none d-xl-inline"></i>NARRATIVE PROFILE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="bi bi-file-earmark-check d-lg-none d-xl-inline"></i>COMPLIANCE REPORT</a>
+                            <a class="nav-link" href="#compliance-report"><i class="bi bi-file-earmark-check d-lg-none d-xl-inline"></i>COMPLIANCE REPORT</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><i class="bi bi-people d-lg-none d-xl-inline"></i>Featured Students</a>
@@ -55,7 +55,7 @@
         </nav>
     </header>
     <main>
-        <div class="container-fluid row w-100 m-0 p-0">
+        <div id="banner" class="container-fluid row w-100 m-0 p-0">
             <div id="aaccup-virtual-accreditation" class="col-12 col-lg-6 p-2 left-banner d-flex flex-column align-items-stretch p-lg-4 p-xxl-5">
                 <div class="logo-text-container my-3 mt-lg-0">
                     <div class="d-flex flex-row logo-container">
@@ -136,7 +136,7 @@
                 </div>
             </div>            
         </div>
-        <div class="container my-3 my-xxl-5">
+        <div id="documents" class="container my-3 my-xxl-5">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 g-lg-4 g-xxl-5">
                 <div class="col mt-3">
                     <div class="card text-center border-card-view rounded shadow-sm h-100 ">
@@ -171,16 +171,16 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="text-center">
-            <h1 class="text-bscs-presentation mt-5">
-                BS COMPUTER SCIENCE
-            </h1>
-            <p class="text-bscs-presentation">
-                Level III – Phase 2 Presentations
-            </p>
-        </div>
-        <div id="video-presentation" class="container-fluid p-2 p-lg-4 p-xxl-5 pb-lg-3 pb-xxl-4">
+        </div> 
+        <div id="video-presentation" class="container-fluid p-2 p-lg-4 p-xxl-5 pb-lg-3 pb-xxl-4 pt-xxl-1">
+            <div class="text-center">
+                <h1 class="text-bscs-presentation mt-2 mt-md-4">
+                    BS COMPUTER SCIENCE
+                </h1>
+                <p class="text-bscs-presentation mb-md-5">
+                    Level III – Phase 2 Presentations
+                </p>
+            </div>
             <div id="video-gallery" class="row">
                 <div class="col-12 col-sm-6 mb-1">
                     <a class="gallery-img-container" 
@@ -231,7 +231,7 @@
                 </div>
             </div>            
         </div>
-        <div class="container-fluid working-checklist py-4">
+        <div id="working-checklist" class="container-fluid working-checklist py-4">
             <div class="text-center mt-3 mb-4 mb-lg-5">
                 <h1 class="text-bscs-presentation mb-4">
                     Working Checklist
@@ -269,6 +269,98 @@
                                 <p class="card-text fs-5 fw-bold">Area IV: Library</p>
                                 <a href="#" class="btn btn-outline-success btn-view">VIEW <i class="bi bi-arrow-right"></i></a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="narrative-report" class="container my-5">
+            <div class="container-fluid row g-4 align-items-stretch">
+                <div class="col-lg-4 narrative-report-image d-none d-lg-block">        
+                </div>
+                <div class="col-lg-8 h-100 ps-lg-4 ps-xxl-5">
+                    <h1 class="display-5 fw-bold mb-5 text-md-start text-center">Narrative Profile</h1>
+                    <div class="row row-cols-1 g-3">
+                        <div class="col">
+                            <h2 class="h4 fw-bold"><a href="#" class="area-link">AREA I</a></h2>
+                            <p class="fs-5 mb-2">Instruction</p>
+                            <hr class="my-3">
+                        </div>
+                        <div class="col">
+                            <h2 class="h4 fw-bold"><a href="#" class="area-link">AREA II</a></h2>
+                            <p class="fs-5 mb-2">Extension</p>
+                            <hr class="my-3">
+                        </div>
+                        <div class="col">
+                            <h2 class="h4 fw-bold"><a href="#" class="area-link">AREA III</a></h2>
+                            <p class="fs-5 mb-2">Faculty</p>
+                            <hr class="my-3">
+                        </div>
+                        <div class="col">
+                            <h2 class="h4 fw-bold"><a href="#" class="area-link">AREA IV</a></h2>
+                            <p class="fs-5 mb-2">Library</p>
+                            <hr class="my-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="compliance-report" class="container my-5">
+            <div class="container-fluid row g-4 align-items-stretch">
+                <div class="col-lg-4 compliance-report-image d-none d-lg-block">        
+                </div>
+                <div class="col-lg-8 h-100 ps-lg-4 ps-xxl-5">
+                    <h1 class="display-5 fw-bold mb-5 text-md-start text-center">Compliance Report</h1>
+                    <div class="row row-cols-1 row-cols-md-2 g-3">
+                        <div class="col">
+                            <h2 class="h4 fw-bold"><a href="#" class="area-link">AREA I</a></h2>
+                            <p class="fs-5 mb-2">Vision, Mission, Goals and Objectives</p>
+                            <hr class="my-2">
+                        </div>
+                        <div class="col">
+                            <h2 class="h4 fw-bold"><a href="#" class="area-link">AREA II</a></h2>
+                            <p class="fs-5 mb-2">Faculty</p>
+                            <hr class="my-2">
+                        </div>
+                        <div class="col">
+                            <h2 class="h4 fw-bold"><a href="#" class="area-link">AREA III</a></h2>
+                            <p class="fs-5 mb-2">Curriculum and Instruction</p>
+                            <hr class="my-2">
+                        </div>
+                        <div class="col">
+                            <h2 class="h4 fw-bold"><a href="#" class="area-link">AREA IV</a></h2>
+                            <p class="fs-5 mb-2">Support to Students</p>
+                            <hr class="my-2">
+                        </div>
+                        <div class="col">
+                            <h2 class="h4 fw-bold"><a href="#" class="area-link">AREA V</a></h2>
+                            <p class="fs-5 mb-2">Research</p>
+                            <hr class="my-2">
+                        </div>
+                        <div class="col">
+                            <h2 class="h4 fw-bold"><a href="#" class="area-link">AREA VI</a></h2>
+                            <p class="fs-5 mb-2">Extension &amp; Community Involvement</p>
+                            <hr class="my-2">
+                        </div>
+                        <div class="col">
+                            <h2 class="h4 fw-bold"><a href="#" class="area-link">AREA VII</a></h2>
+                            <p class="fs-5 mb-2">Library</p>
+                            <hr class="my-2">
+                        </div>
+                        <div class="col">
+                            <h2 class="h4 fw-bold"><a href="#" class="area-link">AREA VIII</a></h2>
+                            <p class="fs-5 mb-2">Physical Plant and Facilities</p>
+                            <hr class="my-2">
+                        </div>
+                        <div class="col">
+                            <h2 class="h4 fw-bold"><a href="#" class="area-link">AREA XI</a></h2>
+                            <p class="fs-5 mb-2">Laboratories</p>
+                            <hr class="my-2">
+                        </div>
+                        <div class="col">
+                            <h2 class="h4 fw-bold"><a href="#" class="area-link">AREA X</a></h2>
+                            <p class="fs-5 mb-2">Administration</p>
+                            <hr class="my-2">
                         </div>
                     </div>
                 </div>

@@ -133,7 +133,7 @@
 }
 
 .right-banner{
-    background-image: url('../images/building.png');
+    background-image: url('../images/building.svg');
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -232,6 +232,44 @@
     padding-bottom: 55px !important;
 }
 
+.compliance-report-image{
+    background-image: url(../images/compliance-report.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--banner-bg-color);
+}
+
+.narrative-report-image{
+    background-image: url(../images/narrative-report.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--banner-bg-color);
+}
+
+.area-link, .area-link:visited, .area-link:active{
+    color: var(--brand-color);
+    text-decoration: underline;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.area-link:hover{
+    color: var(--color-text-02);
+}
+
+#narrative-report h2, #narrative-report p{
+    text-align: center;
+}
+
+#compliance-report h2, #compliance-report p{
+    text-align: center;
+}
+
+#narrative-report hr{
+    color: var(--brand-color);
+}
 
 @media screen and (min-width: 768px) {
     .left-banner img{
@@ -242,11 +280,19 @@
 
     .text-bscs-presentation{
         font-size: 5vw;
-        line-height: 65px;
+        line-height: 40px;
     }
 
     #video-presentation .play-button i{
         font-size: 75px;
+    }
+
+    #compliance-report h2, #compliance-report p{
+        text-align: left;
+    }
+
+    #narrative-report h2, #narrative-report p{
+        text-align: left;
     }
 }
 
@@ -310,6 +356,7 @@
 
     .text-bscs-presentation{
         font-size: 4vw;
+        line-height: 45px;
     }
 
     #video-presentation .video-label{
@@ -340,6 +387,11 @@
     .text-video{
         font-size:3.2rem;
     }
+
+    .text-bscs-presentation{
+        font-size: 4vw;
+        line-height: 60px;
+    }
 }
 
 @media screen and (min-width: 1400px) {
@@ -364,5 +416,10 @@
         font-weight: 800;
         line-height: 72px;
         letter-spacing: -1px;
+    }
+
+    .text-bscs-presentation{
+        font-size: 4vw;
+        line-height: 70px;
     }
 }
