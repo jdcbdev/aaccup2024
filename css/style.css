@@ -31,13 +31,18 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
-    line-height: 39.626px;
+    /* line-height: 39.626px; */
     text-decoration: none;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .site-header a i{
     padding-right: 8px;
+}
+
+.nav-item{
+    padding-left: 5px;
 }
 
 .navbar-toggler{
@@ -147,13 +152,14 @@
 
 #videos{
     background-color: var(--color-gray);
-    border-radius: 40px;
+    border-radius: 30px;
     position: relative;
-    top: -40px;
+    top: -30px;
 }
 
 #featured-students{
     background-color: var(--brand-color);
+    border-radius: 30px;
 }
 
 .gallery-img {
@@ -226,6 +232,10 @@
 
 .border-card-view{
     border: 1px solid var(--brand-color);
+}
+
+.card-img-top{
+    max-width: 250px;
 }
 
 #video-presentation .video-label{
