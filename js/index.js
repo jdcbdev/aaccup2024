@@ -29,31 +29,37 @@ $(document).ready(function() {
         }
     });
 
-    $(document).ready(function() {
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 20,
-            responsiveClass: true,
-            nav: false,
-            dots: true,
-            autoplay: true,
-            autoplayTimeout: 3000,
-            autoplayHoverPause: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                720: {
-                    items: 2
-                },
-                992: {
-                    items: 3
-                },
-                1200: {
-                    items: 4
-                }
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 20,
+        responsiveClass: true,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            720: {
+                items: 2
+            },
+            992: {
+                items: 3
+            },
+            1200: {
+                items: 4
             }
-        });
+        }
+    });
+    
+    $(".nav-link").on('click', function(event) {
+        event.preventDefault();
+    
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top - 70
+        }, 100);
     });
     
 });

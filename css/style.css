@@ -248,19 +248,17 @@
 }
 
 .compliance-report-image{
-    background-image: url(../images/compliance-report.svg);
-    background-position: center;
+    background-image: url(../images/Compliance\ Report.png);
+    background-position:  center;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-color: var(--banner-bg-color);
+    background-size: contain;
 }
 
 .narrative-report-image{
-    background-image: url(../images/narrative-report.svg);
-    background-position: center;
+    background-image: url(../images/Narrative\ Profile.png);
+    background-position:  center;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-color: var(--banner-bg-color);
+    background-size: contain;
 }
 
 .area-link, .area-link:visited, .area-link:active{
@@ -442,6 +440,12 @@
     .text-bscs-presentation{
         font-size: 4vw;
         line-height: 60px;
+    }
+
+    .compliance-report-image, .narrative-report-image{
+        background-position:  center top;
+        background-size: cover;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     }
 }
 
