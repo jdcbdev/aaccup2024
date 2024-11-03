@@ -286,6 +286,19 @@
     margin-top: 20px;
 }
 
+.footer {
+    background-color: var(--color-text);
+    color: #ddd;
+    padding: 20px 0;
+}
+.footer .contact-info {
+    font-size: 18px;
+}
+.footer .contact-info i {
+    color: #888;
+    margin-right: 8px;
+}
+
 @media screen and (min-width: 768px) {
     .left-banner img{
         width: 100px;
@@ -308,6 +321,12 @@
 
     #narrative-report h2, #narrative-report p{
         text-align: left;
+    }
+
+    footer .container-fluid{
+        background-image: url('../images/circle.svg');
+        background-repeat: no-repeat;
+        background-position: top right;
     }
 }
 
@@ -377,6 +396,13 @@
     #video-presentation .video-label{
         font-size: 1.8rem;
     }
+
+    .footer {
+        background-image: url('../images/rectangle.svg');
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        background-size: 45%;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -436,5 +462,9 @@
     .text-bscs-presentation{
         font-size: 4vw;
         line-height: 70px;
+    }
+
+    .footer {
+        background-size: 40%;
     }
 }
