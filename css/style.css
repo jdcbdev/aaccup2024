@@ -178,7 +178,6 @@
 }
 
 .video-label{
-    font-size: 1rem;
     color: var(--color-text);
     font-weight: 700;
 }
@@ -224,7 +223,6 @@
 }
 
 .text-bscs-presentation{
-    font-size: 7vw;
     text-align: center;
     color: var(--color-text);
     font-weight: 800;
@@ -314,11 +312,6 @@
         margin: auto 10px;
     }
 
-    .text-bscs-presentation{
-        font-size: 5vw;
-        line-height: 40px;
-    }
-
     #video-presentation .play-button i{
         font-size: 75px;
     }
@@ -388,23 +381,6 @@
         padding-bottom: 50px !important;
     }
 
-    .text-video{
-        font-size: 2.813rem;
-    }
-
-    .video-label{
-        font-size: 1.2rem;
-    }
-
-    .text-bscs-presentation{
-        font-size: 4vw;
-        line-height: 45px;
-    }
-
-    #video-presentation .video-label{
-        font-size: 1.8rem;
-    }
-
     .footer {
         background-image: url('../images/rectangle.svg');
         background-position: left bottom;
@@ -433,15 +409,6 @@
         font-size: 4rem;
     }
 
-    .text-video{
-        font-size:3.2rem;
-    }
-
-    .text-bscs-presentation{
-        font-size: 4vw;
-        line-height: 60px;
-    }
-
     .compliance-report-image, .narrative-report-image{
         background-position:  center top;
         background-size: cover;
@@ -463,19 +430,6 @@
 
     .text-01.aaccup-text{
         font-size: 4.375rem;
-    }
-
-    .text-video{
-        font-size: 3.2rem;
-        font-style: normal;
-        font-weight: 800;
-        line-height: 72px;
-        letter-spacing: -1px;
-    }
-
-    .text-bscs-presentation{
-        font-size: 4vw;
-        line-height: 70px;
     }
 
     .footer {
