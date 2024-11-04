@@ -56,12 +56,12 @@
 }
 
 .site-header .nav-link:active,
-.site-header .nav-link:visited{
+.site-header .nav-link:visited,
+.site-header .nav-link:focus{
     color: var(--color-white);
 }
 
-.site-header .nav-link:hover,
-.site-header .nav-link:focus{
+.site-header .nav-link:hover{
     color: var(--color-navlink-hover);
 }
 
