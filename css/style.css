@@ -254,6 +254,10 @@
     background-size: contain;
 }
 
+#narrative-report{
+    background-color: var(--banner-bg-color);
+}
+
 .narrative-report-image{
     background-image: url(../images/Narrative\ Profile.png);
     background-position:  center;

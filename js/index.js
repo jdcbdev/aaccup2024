@@ -61,5 +61,14 @@ $(document).ready(function() {
             scrollTop: $($(this).attr('href')).offset().top - 70
         }, 100);
     });
+
+    $('#toggleButton').on('click', function() {
+        $('#more-faculty').toggleClass('d-none');
+        if ($('#more-faculty').hasClass('d-none')) {
+            $('#toggleButton').html('More <i class="ms-1 bi bi-chevron-down"></i>');
+        } else {
+            $('#toggleButton').html('Less <i class="ms-1 bi bi-chevron-up"></i>');
+        }
+    });    
     
 });

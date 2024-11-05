@@ -43,7 +43,7 @@
                         <li class="nav-item d-flex align-items-center">
                             <a class="nav-link" href="#video-presentation"><i class="bi bi-easel d-lg-none d-xl-inline"></i>PRESENTATIONS</a>
                         </li>
-                        <li class="nav-item d-flex align-items-center">
+                        <li class="nav-item d-flex align-items-center d-none">
                             <a class="nav-link" href="#working-checklist"><i class="bi bi-list-check d-lg-none d-xl-inline"></i><span class="text-nowrap">WORKING CHECKLIST</span></a>
                         </li>
                         <li class="nav-item d-flex align-items-center">
@@ -228,7 +228,7 @@
                 </div>
             </div>            
         </div>
-        <div id="working-checklist" class="container-fluid working-checklist py-4">
+        <div id="working-checklist" class="container-fluid working-checklist py-4 d-none">
             <div class="text-center mt-3 mb-4 mb-lg-5">
                 <h1 class="text-bscs-presentation display-5 mb-4">
                     Working Checklist
@@ -271,32 +271,34 @@
                 </div>
             </div>
         </div>
-        <div id="narrative-report" class="container my-5">
-            <div class="container-fluid row g-4 align-items-stretch">
-                <div class="col-lg-5 narrative-report-image d-none d-lg-block">        
-                </div>
-                <div class="col-lg-7 h-100 ps-lg-4 ps-xxl-5">
-                    <h1 class="display-5 fw-bold mb-5 text-md-start text-center">Narrative Profile</h1>
-                    <div class="row row-cols-1 g-3">
-                        <div class="col">
-                            <h2 class="h4 fw-bold"><a href="https://docs.google.com/viewer?srcid=1W8oQL3kbx-r32RW3N-DZCS5A-5H51VUs&pid=explorer&efh=false&a=v&chrome=false&pli=1&usp=sharing" target="_blank" class="area-link">AREA A</a></h2>
-                            <p class="fs-5 mb-2">Instruction</p>
-                            <hr class="my-3">
-                        </div>
-                        <div class="col">
-                            <h2 class="h4 fw-bold"><a href="https://docs.google.com/viewer?srcid=1__fBo9pCjI2f0UYrO_gyY777LO_kmVk1&pid=explorer&efh=false&a=v&chrome=false&pli=1&usp=sharing" target="_blank" class="area-link">AREA B</a></h2>
-                            <p class="fs-5 mb-2">Extension</p>
-                            <hr class="my-3">
-                        </div>
-                        <div class="col">
-                            <h2 class="h4 fw-bold"><a href="https://docs.google.com/viewer?srcid=1hHmua9w5ZmmB-eqJBqdiIyAMmm1xKVx4&pid=explorer&efh=false&a=v&chrome=false&pli=1&usp=sharing" target="_blank" class="area-link">AREA C</a></h2>
-                            <p class="fs-5 mb-2">Faculty</p>
-                            <hr class="my-3">
-                        </div>
-                        <div class="col">
-                            <h2 class="h4 fw-bold"><a href="https://docs.google.com/viewer?srcid=1zulg_xdMH-jIsVZNgg6TtssyTxtbgccO&pid=explorer&efh=false&a=v&chrome=false&pli=1&usp=sharing" target="_blank" class="area-link">AREA D</a></h2>
-                            <p class="fs-5 mb-2">Library</p>
-                            <hr class="my-3">
+        <div id="narrative-report" class="container-fluid mb-5 mt-3 py-5">
+            <div class="container">
+                <div class="container-fluid row g-4 align-items-stretch">
+                    <div class="col-lg-5 narrative-report-image d-none d-lg-block">        
+                    </div>
+                    <div class="col-lg-7 h-100 ps-lg-4 ps-xxl-5">
+                        <h1 class="display-5 fw-bold mb-5 text-md-start text-center">Narrative Profile</h1>
+                        <div class="row row-cols-1 g-3">
+                            <div class="col">
+                                <h2 class="h4 fw-bold"><a href="https://docs.google.com/viewer?srcid=1W8oQL3kbx-r32RW3N-DZCS5A-5H51VUs&pid=explorer&efh=false&a=v&chrome=false&pli=1&usp=sharing" target="_blank" class="area-link">AREA A</a></h2>
+                                <p class="fs-5 mb-2">Instruction</p>
+                                <hr class="my-3">
+                            </div>
+                            <div class="col">
+                                <h2 class="h4 fw-bold"><a href="https://docs.google.com/viewer?srcid=1__fBo9pCjI2f0UYrO_gyY777LO_kmVk1&pid=explorer&efh=false&a=v&chrome=false&pli=1&usp=sharing" target="_blank" class="area-link">AREA B</a></h2>
+                                <p class="fs-5 mb-2">Extension</p>
+                                <hr class="my-3">
+                            </div>
+                            <div class="col">
+                                <h2 class="h4 fw-bold"><a href="https://docs.google.com/viewer?srcid=1hHmua9w5ZmmB-eqJBqdiIyAMmm1xKVx4&pid=explorer&efh=false&a=v&chrome=false&pli=1&usp=sharing" target="_blank" class="area-link">AREA C</a></h2>
+                                <p class="fs-5 mb-2">Faculty</p>
+                                <hr class="my-3">
+                            </div>
+                            <div class="col">
+                                <h2 class="h4 fw-bold"><a href="https://docs.google.com/viewer?srcid=1zulg_xdMH-jIsVZNgg6TtssyTxtbgccO&pid=explorer&efh=false&a=v&chrome=false&pli=1&usp=sharing" target="_blank" class="area-link">AREA D</a></h2>
+                                <p class="fs-5 mb-2">Library</p>
+                                <hr class="my-3">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -471,6 +473,10 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div id="more-faculty" class="col-12 d-none">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xxl-4 g-3 justify-content-center">
                         <div class="col">
                             <div class="card h-100 text-center border-0 d-flex align-items-center">
                                 <img src="images/faculty/catadman.png" class="card-img-top img-fluid rounded-circle" alt="Mr. Jason A. Catadman, MIT">
@@ -652,6 +658,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="text-center mt-4">
+                    <button id="toggleButton" class="btn btn-outline-success btn-view">More <i class="ms-1 bi bi-chevron-down"></i></button>
                 </div>
             </div>
         </div>         
