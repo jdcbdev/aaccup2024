@@ -175,8 +175,16 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    padding: 10px;
-    font-size: 60px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
 }
 
 .video-label{
@@ -198,7 +206,7 @@
 }
 
 .gallery-img-container:hover .gallery-img {
-    transform: scale(1.1) rotate(5deg);
+    transform: scale(1.15) rotate(5deg);
     cursor: pointer;
 }
 
@@ -323,7 +331,9 @@
     }
 
     #video-presentation .play-button i{
-        font-size: 75px;
+        font-size: 70px;
+        width: 80px;
+        height: 80px;
     }
 
     #compliance-report h2, #compliance-report p{
