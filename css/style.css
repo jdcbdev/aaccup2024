@@ -17,9 +17,11 @@
     --color-black: #000;
     --color-white: #fff;
     --color-text: #262626;
+    --color-video-1: #3B3B3B;
     --color-text-02: #717D7D;
     --color-gray: #606060;
     --color-navlink-hover: rgb(168, 168, 168);
+    --bg-video: #ECECEC;
 }
 
 .site-header .navbar{
@@ -147,20 +149,20 @@
 }
 
 .text-video{
-    color: var(--color-white);
+    color: var(--color-video-1);
     font-style: normal;
     font-weight: 800;
 }
 
 #videos{
-    background-color: var(--color-gray);
+    background-color: var(--bg-video);
     border-radius: 30px;
     position: relative;
     top: -30px;
 }
 
 #featured-students{
-    background-color: var(--brand-color);
+    background-color: var(--banner-bg-color);
     border-radius: 30px;
 }
 
@@ -299,7 +301,7 @@
 .owl-theme .owl-dots .owl-dot span{
     width: 20px;
     height: 20px;
-    background-color: var(--color-white);
+    background-color: var(--brand-color);
 }
 
 .owl-theme .owl-nav.disabled+.owl-dots{
