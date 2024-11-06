@@ -17,9 +17,11 @@
     --color-black: #000;
     --color-white: #fff;
     --color-text: #262626;
+    --color-video-1: #3B3B3B;
     --color-text-02: #717D7D;
     --color-gray: #606060;
     --color-navlink-hover: rgb(168, 168, 168);
+    --bg-video: #ECECEC;
 }
 
 .site-header .navbar{
@@ -147,20 +149,20 @@
 }
 
 .text-video{
-    color: var(--color-white);
+    color: var(--color-video-1);
     font-style: normal;
     font-weight: 800;
 }
 
 #videos{
-    background-color: var(--color-gray);
+    background-color: var(--bg-video);
     border-radius: 30px;
     position: relative;
     top: -30px;
 }
 
 #featured-students{
-    background-color: var(--brand-color);
+    background-color: var(--banner-bg-color);
     border-radius: 30px;
 }
 
@@ -175,8 +177,16 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    padding: 10px;
-    font-size: 60px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
 }
 
 .video-label{
@@ -198,7 +208,7 @@
 }
 
 .gallery-img-container:hover .gallery-img {
-    transform: scale(1.1) rotate(5deg);
+    transform: scale(1.15) rotate(5deg);
     cursor: pointer;
 }
 
@@ -291,7 +301,7 @@
 .owl-theme .owl-dots .owl-dot span{
     width: 20px;
     height: 20px;
-    background-color: var(--color-white);
+    background-color: var(--brand-color);
 }
 
 .owl-theme .owl-nav.disabled+.owl-dots{
@@ -323,7 +333,9 @@
     }
 
     #video-presentation .play-button i{
-        font-size: 75px;
+        font-size: 70px;
+        width: 80px;
+        height: 80px;
     }
 
     #compliance-report h2, #compliance-report p{
